@@ -2,6 +2,7 @@ import React from 'react';
 import Typical from 'react-typical';
 
 import ScrollService from '../../../utilities/ScrollService';
+import Resume_Sneh from '../../../../src/Resume_Sneh_Aashish_Gupta_CSE_Undergrad_4_months_SDE.pdf';
 import './Profile.css';
 
 const Profile = () => {
@@ -66,7 +67,7 @@ const Profile = () => {
                             {""}
                             Hire Me{" "}
                         </button>
-                        <a href='Resume_Sneh_Aashish_Gupta_CSE_Undergrad_4_months_SDE.pdf' download='Sneh Aashish Gupta Resume NIT Jaipur 3rd Year SDE Intern'>
+                        <a href={Resume_Sneh} download='Sneh Aashish Gupta Resume NIT Jaipur 3rd Year SDE Intern'>
                             <button className='btn highlighted-btn'>Get Resume</button>
                         </a>
                     </div>
