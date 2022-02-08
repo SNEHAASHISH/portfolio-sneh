@@ -76,7 +76,7 @@ const Resume = (props) => {
       subHeading: "Technologies Used: React JS, Firebase",
     },
     {
-      title: "Mobile E-shop ",
+      title: "Whiteboard",
       duration: {fromDate: "2021", toDate: "2022"},
       description:
       "A realtime and interactive whiteboard application with draw, erase add images, add notes functionality.",
