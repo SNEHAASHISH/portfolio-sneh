@@ -74,6 +74,7 @@ const Resume = (props) => {
       description:
         "A Resume Builder that uses Redux State management property of React.js to serve resumes to users for FREE!",
       subHeading: "Technologies Used: React JS, Firebase",
+      link: "https://github.com/SNEHAASHISH/Resume_Builder"
     },
     {
       title: "Whiteboard",
@@ -81,6 +82,7 @@ const Resume = (props) => {
       description:
       "A realtime and interactive whiteboard application with draw, erase add images, add notes functionality.",
       subHeading: "Technologies Used: HTML, CSS, JavaScript, Socket.io, Canvas API",
+      link: "https://snehaashish.github.io/Whiteboard/"
     },
   ];
 
@@ -117,7 +119,7 @@ const Resume = (props) => {
         />
         <div className="experience-description">
             <span className='resume-description-text'>
-                Currently working as a full stack developer intern and primary tech stack is React.js, Python(Flask), MongoDB, Amazon S3 and Algolia
+                Currently working as a full stack developer intern and primary tech stack is <b>React.js</b>, <b>Python(Flask)</b>, <b>MongoDB</b>, <b>Amazon S3</b> and <b>Algolia</b>.
             </span>
         </div>
         <div className="experience-description">
@@ -126,9 +128,8 @@ const Resume = (props) => {
           </span>
           <br />
           <span className="resume-description-text">
-          - Dumped Mongo collections of pod and coins data to their Algolia indices and
-devised its ranking criteria using a Python(Flask) program and developed file upload feature to Amazon S3 which also updated the
-Mongo collection and Algolia index in backend.{" "}
+          - Developed file upload feature to Amazon S3 which also updated the
+Mongo collection and Algolia index for <i>coins</i> and <i>pod data</i> in the backend.{" "}
           </span>
           <br />
         </div>
@@ -155,6 +156,7 @@ Mongo collection and Algolia index in backend.{" "}
     /* PROJECTS */
     <div className="resume-screen-container" key="projects">
       {projectsDetails.map((projectsDetails, index) => (
+        <a rel="noopener noreferrer" href={projectsDetails.link} target="_blank" style={{ textDecoration: 'none', color: '#1f2235'}}>
         <ResumeHeading
           key={index}
           heading={projectsDetails.title}
@@ -163,17 +165,18 @@ Mongo collection and Algolia index in backend.{" "}
           fromDate={projectsDetails.duration.fromDate}
           toDate={projectsDetails.duration.toDate}
         />
+        </a>
       ))}
     </div>,
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading='Current Affairs'
-        description='I really like following geopolitical developments around the world, by virtue of my schooling in multiple countries keeping up to date with global affairs is something I really vibe with!'
+        heading='Current Affairs &nbsp; 🌏'
+        description='I really like following geopolitical developments around the world, by virtue of my schooling in multiple countries, keeping up to date with global affairs is something with which I really vibe with!'
       />
       <ResumeHeading
-        heading='Gaming'
-        description='From the Nintendo Gameboy in my childhood, to graduating from PS2 to PS3 during my teens, and a later while with Mobile Gaming, my tryst with this addictive combination of both stress and happy hormone inducing activity has been so far a lifetime feature about me'
+        heading='Gaming &nbsp; 🎮'
+        description='From the Nintendo Gameboy  in my childhood, to switching from PS2 to PS3 during my teens, and in a later while with Mobile Gaming, my tryst with this addictive combination of both adrenaline and dopamine inducing activity has been so far a lifetime feature that I really cherish'
       />
     </div>,
   ];

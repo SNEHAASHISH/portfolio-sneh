@@ -23,6 +23,14 @@ export default class ScrollService {
     contactMeScreen.scrollIntoView({ behavior: "smooth" });
   };
 
+  /* SCROLL TO HOME */
+  scrollToHome = () => {
+    let homeScreen = document.getElementById("Home");
+    if (!homeScreen) return;
+
+    homeScreen.scrollIntoView({ behavior: "smooth" });
+  };
+
   /* CHECK IF ELEMENT IS IN VIEW */
   isElementInView = (elem, type) => {
     let rec = elem.getBoundingClientRect();

@@ -8,6 +8,7 @@ import loading from "../../../../client/src/images/load2.gif";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
+import Footer from "../Footer/Footer";
 import "./ContactMe.css";
 
 export default function ContactMe(props) {
@@ -128,13 +129,13 @@ export default function ContactMe(props) {
               ]}
             />
           </h2>
-          <a href="https://github.com/SNEHAASHISH">
+          <a rel="noopener noreferrer" href="https://github.com/SNEHAASHISH" target="_blank">
             <i className="fa fa-github"></i>
           </a>
-          <a href="https://twitter.com/sneh_aashish">
+          <a rel="noopener noreferrer" href="https://twitter.com/sneh_aashish" target="_blank">
             <i className="fa fa-twitter"></i>
           </a>
-          <a href="https://www.linkedin.com/in/sneh-aashish-gupta-b33259199/">
+          <a rel="noopener noreferrer" href="https://www.linkedin.com/in/sneh-aashish-gupta-b33259199/" target="_blank">
             <i className="fa fa-linkedin"></i>
           </a>
         </div>
@@ -175,6 +176,7 @@ export default function ContactMe(props) {
           </form>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

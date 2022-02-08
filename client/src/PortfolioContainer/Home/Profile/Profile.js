@@ -12,13 +12,13 @@ const Profile = () => {
                 <div className='profile-details'>
                     <div className='colz'>
                         <div className='colz-icon'>
-                            <a href='https://github.com/SNEHAASHISH'>
+                            <a rel="noopener noreferrer" href='https://github.com/SNEHAASHISH' target="_blank">
                                 <i className="fa fa-github"></i>
                             </a>
-                            <a href='https://twitter.com/sneh_aashish'>
+                            <a rel="noopener noreferrer" href='https://twitter.com/sneh_aashish' target="_blank">
                                 <i className='fa fa-twitter'></i>
                             </a>
-                            <a href='https://www.linkedin.com/in/sneh-aashish-gupta-b33259199/'>
+                            <a rel="noopener noreferrer" href='https://www.linkedin.com/in/sneh-aashish-gupta-b33259199/' target="_blank">
                                 <i className='fa fa-linkedin'></i>
                             </a>
                         </div>
@@ -56,7 +56,7 @@ const Profile = () => {
                             </h1>
                         </span>
                         <span className="profile-role-tagline">
-                            Knack of Building Swanky Frontend, Powerful Smart Contracts and Competitive Programming!
+                            Knack for building Swanky Frontend, Powerful Smart Contracts and Competitive Programming!
                         </span>
                     </div>
                     <div className='profile-options'>
