@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
+import Resume_Sneh from '../../../src/Resume_Sneh_Aashish_Gupta_CSE_Undergrad_4_months_SDE.pdf';
 
 import './AboutMe.css';
 
@@ -63,7 +64,7 @@ const AboutMe = (props) => {
                         </div>
                         <div className="about-me-options">
                             <button className="btn primary-btn" onClick={() => ScrollService.scrollHandler.scrollToHireMe()}> Hire Me </button>
-                            <a href="ehizcv.pdf" download="Ehiedu Ehizcv.pdf">
+                            <a href={Resume_Sneh} download='Sneh Aashish Gupta Resume NIT Jaipur 3rd Year SDE Intern'>
                                 <button className="btn highlighted-btn"> Get Resume </button>
                             </a>
                         </div>
